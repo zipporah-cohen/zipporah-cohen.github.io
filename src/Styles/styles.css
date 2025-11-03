@@ -1,0 +1,53 @@
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  & > h1 {
+    margin-bottom: 0px;
+  }
+  & > p {
+    margin: 0px;
+  }
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-bar {
+  justify-content: space-evenly;
+}
+
+.home-page {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+
+  .text-item {
+    width: 60%;
+    align-self: center;
+    margin-left: 5%;
+  }
+  .image-container {
+    width: 40%;
+    align-content: center;
+  }
+  .image-container .image {
+    width: 300px; 
+    height: 300px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 8px solid; /* border color defined on component*/
+    margin-left: 10%;
+  }
+}
