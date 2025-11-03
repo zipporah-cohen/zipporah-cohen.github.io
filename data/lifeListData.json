@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "category": "experience",
+        "status": "complete",
+        "title": "Take a pottery class",
+        "notes": "I've made over 50 pieces that I use in my home and gift to friends!"
+    },
+    {
+        "id": 2,
+        "category": "experience",
+        "status": "planned",
+        "title": "Go on a bikepacking trip",
+        "notes": ""
+    },
+    {
+        "id": 3,
+        "category": "experience",
+        "status": "to-do",
+        "title": "Live abroad",
+        "notes": ""
+    },
+    {
+        "id": 4,
+        "category": "objective",
+        "status": "in progress",
+        "title": "Read 48 books in a year",
+        "notes": ""
+    },
+    {
+        "id": 5,
+        "category": "experience",
+        "status": "complete",
+        "title": "Host my family members in my own home",
+        "notes": ""
+    },
+    {
+        "id": 6,
+        "category": "experience",
+        "status": "complete",
+        "title": "Sew myself a garment from scratch",
+        "notes": ""
+    },
+    {
+        "id": 7,
+        "category": "objective",
+        "status": "complete",
+        "title": "Win NCAAs",
+        "notes": ""
+    },
+    {
+        "id": 8,
+        "category": "objective",
+        "status": "complete",
+        "title": "Become a Sommelier",
+        "notes": "Level II is in the works!"
+    },
+    {
+        "id": 9,
+        "category": "experience",
+        "status": "to-do",
+        "title": "Cook in a commercial kitchen",
+        "notes": ""
+    },
+    {
+        "id": 10,
+        "category": "experience",
+        "status": "to-do",
+        "title": "Bike from coast to coast across the US",
+        "notes": ""
+    },
+    {
+        "id": 11,
+        "category": "objective",
+        "status": "complete",
+        "title": "Drink coffee from a cermic mug I made",
+        "notes": ""
+    },
+    {
+        "id": 12,
+        "category": "objective",
+        "status": "to-do",
+        "title": "Make a meal from ingredients grown in my own garden",
+        "notes": ""
+    },
+    {
+        "id": 13,
+        "category": "objective",
+        "status": "in progress",
+        "title": "Become fluent in a third language",
+        "notes": "Portuguese is slowly coming along"
+    },
+    {
+        "id": 14,
+        "category": "experience",
+        "status": "complete",
+        "title": "Host a dinner party",
+        "notes": ""
+    },
+    {
+        "id": 15,
+        "category": "experience",
+        "status": "to-do",
+        "title": "Do a hut-to-hut hiking trip in the Alps",
+        "notes": ""
+    }
+]

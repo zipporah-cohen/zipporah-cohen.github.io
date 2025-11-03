@@ -1,0 +1,61 @@
+[
+    {
+        "id": "books",
+        "consumptionCategory": "Books",
+        "items": [
+            {"title": "Death's End", "author": "Cixin Liu"}, 
+            {"title": "Remains of the Day", "author": "Kazuo Ishiguro"}, 
+            {"title": "Intro to Wittgenstein", "author": "Unknown"}, 
+            {"title": "Parable of the Sower", "author": "Octavia Butler"},
+            {"title": "A Visit from the Goon Squad", "author": "Jennifer Eagan"},
+            {"title": "Nightbitch", "author": "Rachel Yoder"},
+            {"title": "Animal Farm", "author": "George Orwell"},
+            {"title": "The Candy House", "author": "Jennifer Eagan"},
+            {"title": "The Poisonwood Bible", "author": "Barbara Kingsolver"},
+            {"title": "The Will of the Many", "author": "James Islington"},
+            {"title": "Pachinko", "author": "Min Jin Lee"},
+            {"title": "Babel", "author": "R. F. Kuang"},
+            {"title": "Purple Hibiscus", "author": "Chimamanda Ngozi Adichie"},
+            {"title": "North Woods", "author": "Daniel Mason"},
+            {"title": "Ève de ses Décombres", "author": "Ananda Devi"},
+            {"title": "Brave New World", "author": "Aldous Huxley"},
+            {"title": "The Ancient Art of Thinking for Yourself", "author": "Robin Reames"}
+        ]
+    },
+    {
+        "id": "languages",
+        "consumptionCategory": "Duolingo Languages",
+        "items": [
+            {"language": "French", "level": "Section 2, Unit 11"}, 
+            {"language": "Spanish", "level": "Section 1, Unit 8"}, 
+            {"language": "Turkish", "level": "Section 1, Unit 1"},
+            {"language": "Portuguese", "level": "Section 2, Unit 18"},
+            {"language": "Greek", "level": "Section 1, Unit 2"}
+        ]
+    },
+    {
+        "id": "recipes",
+        "consumptionCategory": "Go-To Recipes",
+        "items": [
+            "Self-Developed Sourdough Bread",
+            "Lalla Mussa Dal", 
+            "Halloumi, Tomato, and Corn Salad",
+            "Black Bean and Cheese Pupusas",
+            "Shakshuka",
+            "Pad See Ew",
+            "Chermoula Shrimp and Orzo",
+            "Garlicky Spinach and Pistachio Pasta"
+        ]
+    },
+    {
+        "id": "wines",
+        "consumptionCategory": "Wines",
+        "items": [
+            {"varietal": "Albariño", "producer": "Burgans", "vintage": 2022, "region": "Rias Baixas"},
+            {"varietal": "Riesling", "producer": "Trimbach", "vintage": 2023, "region": "Alsace"},
+            {"varietal": "Gamay", "producer": "Stephanie Aviron", "vintage": 2022, "region": "Cru de Beaujolais"},
+            {"varietal": "Carmenère", "producer": "Montes Alpha", "vintage": 2021, "region": "Colchagua Valley"},
+            {"varietal": "Syrah", "producer": "Gust", "vintage": 2023, "region": "Petaluma Gap, Sonoma"}
+        ]
+    }
+]
