@@ -14,7 +14,7 @@ const { palette } = useTheme();
         My name is Zipporah Cohen, and I’m a software engineer, hobby bicyclist, and avid cook. Welcome to my workspace!
         <br /><br />
         I’m currently a full-time software engineer doing fullstack web development. 
-        This website is the place where I practice skills, learn new ones, labor over minute CSS tweaks.
+        This website is the place where I practice skills, learn new ones, and labor over minute CSS tweaks.
         <br /><br />
         After growing up in Minnesota, I moved out East for college. I graduated from Wellesley College Summa Cum Laude where I studied Computer Science and Philosophy, 
         though French very nearly made the cut.
