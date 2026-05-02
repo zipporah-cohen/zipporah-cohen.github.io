@@ -34,7 +34,7 @@ const ImageOverlayCard = ({ imageSrc, title, subtext, projectURL = "" }: ImageOv
   return (
   <div className={styles.imageCard}>
     {projectURL ? (
-      <a href={projectURL} target="_blank">
+      <a href={projectURL} target="_blank" rel="noopener noreferrer">
         {cardContent}
       </a>
       ) : (

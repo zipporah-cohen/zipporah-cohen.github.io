@@ -10,11 +10,11 @@ const Footer = () => {
     <Box sx={{ width: "max-width", marginTop: "auto"}}>
       <BottomNavigation
         showLabels
-        sx={{ backgroundColor: "#82b29a" }}
+        sx={{ backgroundColor: "var(--color-footer)" }}
       >
-        <BottomNavigationAction label="Resume" icon={<ArticleIcon />} href="/files/Cohen_Resume.pdf" target='_blank'/>
-        <BottomNavigationAction label="LinkedIn" icon={<LinkedInIcon />} href='https://www.linkedin.com/in/zipporah-cohen/' target='_blank'/>
-        <BottomNavigationAction label="GitHub" icon={<GitHubIcon />} href='https://github.com/zipporah-cohen/' target='_blank'/>
+        <BottomNavigationAction label="Resume" icon={<ArticleIcon />} href="/files/Cohen_Resume.pdf" target='_blank' rel='noopener noreferrer'/>
+        <BottomNavigationAction label="LinkedIn" icon={<LinkedInIcon />} href='https://www.linkedin.com/in/zipporah-cohen/' target='_blank' rel='noopener noreferrer'/>
+        <BottomNavigationAction label="GitHub" icon={<GitHubIcon />} href='https://github.com/zipporah-cohen/' target='_blank' rel='noopener noreferrer'/>
       </BottomNavigation>
     </Box>
   );

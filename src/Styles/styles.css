@@ -1,3 +1,17 @@
+:root {
+  --color-footer: #82b29a;
+  --color-card-bg: #f8f7f2;
+  --color-status-complete-bg: #e8f5e9;
+  --color-status-complete-text: #2e7d32;
+  --color-status-in-progress-bg: #e3f2fd;
+  --color-status-in-progress-text: #1565c0;
+  --color-status-planned-bg: #f6e2c3;
+  --color-status-planned-text: #e65100;
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --shadow-card-focus: 0 4px 12px rgba(0, 0, 0, 0.25);
+  --shadow-icon-card: 0 2px 8px rgba(60, 64, 91, 0.15);
+}
+
 .app-wrapper {
   display: flex;
   flex-direction: column;

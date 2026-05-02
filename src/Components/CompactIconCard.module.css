@@ -1,8 +1,8 @@
 .iconCard {
-    background: #f8f7f2;
+    background: var(--color-card-bg);
     border-radius: 8px;
     padding: 16px;
-    box-shadow: 0 2px 8px rgba(60, 64, 91, 0.15);
+    box-shadow: var(--shadow-icon-card);
     display: flex;
     align-items: stretch;
 }
@@ -39,16 +39,16 @@
 }
 
 .cardTag[data-status="complete"] {
-    background-color: #e8f5e9;
-    color: #2e7d32;
+    background-color: var(--color-status-complete-bg);
+    color: var(--color-status-complete-text);
 }
 
 .cardTag[data-status="in progress"] {
-    background-color: #e3f2fd;
-    color: #1565c0;
+    background-color: var(--color-status-in-progress-bg);
+    color: var(--color-status-in-progress-text);
 }
 
 .cardTag[data-status="planned"] {
-    background-color: #f6e2c3;
-    color: #e65100;
+    background-color: var(--color-status-planned-bg);
+    color: var(--color-status-planned-text);
 }
