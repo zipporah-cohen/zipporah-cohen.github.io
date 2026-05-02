@@ -19,7 +19,7 @@ const ProjectsPage: React.FC = () => {
           imageSrc={thisWebsiteImage} 
           title='This Website!' 
           subtext='Though certainly a work in progress, this is the place where I demonstrate and practice my current skills, experiment with new ones, and give my professional facade a bit more character.'
-          projectURL='https://github.com/zipporah-cohen/personal-website'
+          projectURL='https://github.com/zipporah-cohen/zipporah-cohen.github.io'
         />
         <ImageOverlayCard 
           imageSrc={genderedLanguageImage} 

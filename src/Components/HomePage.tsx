@@ -1,12 +1,12 @@
 import React from 'react';
-import { Typography, useTheme } from '@mui/material';
-import '../Styles/styles.css';
+import { useTheme } from '@mui/material';
 import headshot from '../assets/Headshot.jpg';
+import '../Styles/styles.css';
 
 const HomePage: React.FC = () => {
-
-const { palette } = useTheme();
   
+  const { palette } = useTheme();
+
   return (
     <div className="home-page">
       <div className="text-item">
@@ -18,9 +18,10 @@ const { palette } = useTheme();
         <br /><br />
         After growing up in Minnesota, I moved out East for college. I graduated from Wellesley College Summa Cum Laude where I studied Computer Science and Philosophy, 
         though French very nearly made the cut.
-        Since graduation, I’ve cultivated a lovely home and community in Chicago, IL, but I'm never short on new places to visit.
+        After graduation, I cultivated a lovely home and community in Chicago, IL before giving West Coast life a go. 
+        I currently live in the Bay Area, where I put my certified sommelier skills to work, spend (responsible) time in the sun, and eat seasonal produce.
         When I’m not cooking and biking, I might be chipping away at my bookshelf, in the pottery studio, 
-        or studying up for my next Sommelier exam.
+        or tending to my plants.
         <br /><br />
         Click around to get to know me, see some of my projects, and learn about what I've been up to!
       </div>

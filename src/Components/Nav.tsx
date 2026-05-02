@@ -1,11 +1,10 @@
 import React from 'react';
 import { useTheme } from '@mui/material';
 import { AppBar, Toolbar } from '@mui/material';
-import { Checklist, ContentCut, Home, ShoppingBag } from '@mui/icons-material';
+import { Checklist, ContentCut, ShoppingBag } from '@mui/icons-material';
 import NavItem from './NavItem';
 import { SvgIcon } from '@mui/material';
 import { ReactComponent as HomeIcon } from '../zc-icon.svg';
-import { s } from 'react-router/dist/development/index-react-server-client-CMphySRb';
 
 const Nav: React.FC = () => {
   const { palette } = useTheme();
