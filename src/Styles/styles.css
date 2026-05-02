@@ -28,26 +28,3 @@
   justify-content: space-evenly;
 }
 
-.home-page {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: row;
-
-  .text-item {
-    width: 60%;
-    align-self: center;
-    margin-left: 5%;
-  }
-  .image-container {
-    width: 40%;
-    align-content: center;
-  }
-  .image-container .image {
-    width: 300px; 
-    height: 300px;
-    border-radius: 50%; 
-    object-fit: cover; 
-    border: 8px solid; /* border color defined on component*/
-    margin-left: 10%;
-  }
-}

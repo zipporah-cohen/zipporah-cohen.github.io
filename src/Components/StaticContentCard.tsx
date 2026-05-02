@@ -1,6 +1,6 @@
 import React, { ReactNode, useState } from 'react';
 import { useTheme, Modal, Box } from '@mui/material';
-import '../Styles/static-content-card.css';
+import styles from './StaticContentCard.module.css';
 
 type StaticContentCardProps = {
     title: string;
@@ -30,13 +30,13 @@ const StaticContentCard: React.FC<StaticContentCardProps> = ({
 
     const cardContent = (
         <>
-            {icon && <div className="static-card-icon">{icon}</div>}
-            <div className="static-card-content">
-                <h3 className="static-card-title" style={{ color: palette.primary.main }}>
+            {icon && <div className={styles.staticCardIcon}>{icon}</div>}
+            <div className={styles.staticCardContent}>
+                <h3 className={styles.staticCardTitle} style={{ color: palette.primary.main }}>
                     {title}
                 </h3>
                 {text && (
-                    <p className="static-card-text" style={{ color: palette.text.primary }}>
+                    <p className={styles.staticCardText} style={{ color: palette.text.primary }}>
                         {text}
                     </p>
                 )}
@@ -47,7 +47,7 @@ const StaticContentCard: React.FC<StaticContentCardProps> = ({
     return (
         <>
             <div
-                className={`static-content-card ${hover ? 'hover' : ''}`}
+                className={`${styles.staticContentCard} ${hover ? styles.hover : ''}`}
                 onMouseEnter={() => setHover(true)}
                 onMouseLeave={() => setHover(false)}
                 onClick={handleCardClick}
@@ -62,8 +62,8 @@ const StaticContentCard: React.FC<StaticContentCardProps> = ({
                         open={modalOpen}
                         onClose={handleModalClose}
                     >
-                        <Box className="static-card-modal">
-                            <h3 className="static-card-title" style={{ color: palette.primary.main }}>
+                        <Box className={styles.staticCardModal}>
+                            <h3 className={styles.staticCardTitle} style={{ color: palette.primary.main }}>
                                 {modalContent.modalTitle}
                             </h3>
                             <div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import '../Styles/image-cards.css';
 import CompactIconCard from './CompactIconCard';
 import { LifeListItem } from '../types';
+import styles from './LifeList.module.css';
 
 const LifeList: React.FC = () => {
   const [listItems, setListItems] = useState<LifeListItem[]>([]);
@@ -27,7 +27,7 @@ const LifeList: React.FC = () => {
         <h1>Life List</h1>
         <p>What better way to get to know me than the things I aim to do and experience? Items are tagged with their status and icons indicate their category (experience or objective).</p>
       </div>      
-        <div className="icon-cards-grid">
+        <div className={styles.iconCardsGrid}>
         {listItems.map((item) => (
           <CompactIconCard
             key={item.id}

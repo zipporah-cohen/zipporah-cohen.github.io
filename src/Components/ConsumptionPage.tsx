@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import StaticContentCard from './StaticContentCard';
 import { ConsumptionData } from '../types';
 import useConsumptionData from '../hooks/useConsumptionData';
-import '../Styles/static-content-card.css';
+import styles from './ConsumptionPage.module.css';
 
 const ConsumptionPage: React.FC = () => {
     const [consumptionItems, setConsumptionItems] = useState<ConsumptionData>([]);
@@ -34,7 +34,7 @@ const ConsumptionPage: React.FC = () => {
                 <h1>Consuming Under Capitalism</h1>
                 <p>Things I've been eating, drinking, and learning of late.</p>
             </div>
-            <div className="content-cards-grid" >
+            <div className={styles.contentCardsGrid}>
                 <StaticContentCard
                     key="wines"
                     icon={formattedWinesContent.icon}

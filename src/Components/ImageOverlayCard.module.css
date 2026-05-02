@@ -1,0 +1,65 @@
+.imageCard {
+  flex-grow: 1;
+  margin: 10px;
+  position: relative;
+  width: 400px;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.textPanel {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 12px;
+  transition: height 0.3s ease;
+  overflow: hidden;
+}
+
+.textPanel.collapsed {
+  height: 25%;
+}
+
+.textPanel.expanded {
+  height: 80%;
+  overflow-y: auto;
+}
+
+.textPanel.expanded::-webkit-scrollbar {
+  width: 6px;
+}
+
+.textPanel.expanded:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.subtext {
+  font-size: 0.9rem;
+  margin-top: 4px;
+  line-height: 1.3;
+}
+
+.subtext.truncated {
+  display: -webkit-box;
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

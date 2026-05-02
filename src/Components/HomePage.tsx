@@ -1,15 +1,15 @@
 import React from 'react';
 import { useTheme } from '@mui/material';
 import headshot from '../assets/Headshot.jpg';
-import '../Styles/styles.css';
+import styles from './HomePage.module.css';
 
 const HomePage: React.FC = () => {
   
   const { palette } = useTheme();
 
   return (
-    <div className="home-page">
-      <div className="text-item">
+    <div className={styles.homePage}>
+      <div className={styles.textItem}>
         <h1>Hey there!</h1>
         My name is Zipporah Cohen, and I’m a software engineer, hobby bicyclist, and avid cook. Welcome to my workspace!
         <br /><br />
@@ -25,11 +25,12 @@ const HomePage: React.FC = () => {
         <br /><br />
         Click around to get to know me, see some of my projects, and learn about what I've been up to!
       </div>
-      <div className='image-container'>
-        <img 
-          style={{border: "palette.primary.main"}} 
-          className='image'
+      <div className={styles.imageContainer}>
+        <img
+          style={{ borderColor: palette.primary.main }}
+          className={styles.image}
           src={headshot}
+          alt="Headshot of Zipporah Cohen"
         />
       </div>
     </div>
