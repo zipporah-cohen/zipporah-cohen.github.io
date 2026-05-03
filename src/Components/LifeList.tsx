@@ -1,6 +1,6 @@
 import React from 'react';
 import CompactIconCard from './CompactIconCard';
-import styles from './LifeList.module.css';
+import styles from '../Styles/modules/LifeList.module.css';
 import useLifeListData from '../hooks/useLifeListData';
 
 const LifeList: React.FC = () => {

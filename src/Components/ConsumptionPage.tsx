@@ -2,7 +2,7 @@ import React from 'react';
 import StaticContentCard from './StaticContentCard';
 import useConsumptionData from '../hooks/useConsumptionData';
 import useFormattedConsumptionData from '../hooks/useFormattedConsumptionData';
-import styles from './ConsumptionPage.module.css';
+import styles from '../Styles/modules/ConsumptionPage.module.css';
 
 const ConsumptionPage: React.FC = () => {
     const { data: consumptionItems, loading, error } = useConsumptionData();

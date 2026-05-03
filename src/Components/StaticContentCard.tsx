@@ -1,6 +1,6 @@
 import React, { ReactNode, useState } from 'react';
 import { useTheme, Modal, Box } from '@mui/material';
-import styles from './StaticContentCard.module.css';
+import styles from '../Styles/modules/StaticContentCard.module.css';
 
 type StaticContentCardProps = {
     title: string;

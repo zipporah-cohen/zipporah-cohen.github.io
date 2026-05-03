@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTheme } from '@mui/material';
-import styles from './ImageOverlayCard.module.css';
+import styles from '../Styles/modules/ImageOverlayCard.module.css';
 
 type ImageOverlayCardProps = {
   imageSrc: string,

@@ -1,4 +1,4 @@
-import styles from './CompactIconCard.module.css';
+import styles from '../Styles/modules/CompactIconCard.module.css';
 import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import { IconCardContent } from '../types';

@@ -5,7 +5,7 @@ import bigKnitImage from '../assets/gantry.png';
 import genderedLanguageImage from '../assets/senior-poster.png';
 import chatroomImage from '../assets/chatroom.png';
 import savingFaceImage from '../assets/saving-face.png';
-import styles from './ProjectsPage.module.css';
+import styles from '../Styles/modules/ProjectsPage.module.css';
 
 const ProjectsPage: React.FC = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTheme } from '@mui/material';
 import headshot from '../assets/Headshot.jpg';
-import styles from './HomePage.module.css';
+import styles from '../Styles/modules/HomePage.module.css';
 
 const HomePage: React.FC = () => {
   
