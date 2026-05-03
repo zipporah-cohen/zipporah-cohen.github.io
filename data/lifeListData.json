@@ -46,14 +46,14 @@
         "category": "objective",
         "status": "complete",
         "title": "Win NCAAs",
-        "notes": ""
+        "notes": "Row row row your boat"
     },
     {
         "id": 8,
         "category": "objective",
         "status": "complete",
         "title": "Become a Sommelier",
-        "notes": "Level II is in the works!"
+        "notes": "Not just level I but level II! Ask me anything."
     },
     {
         "id": 9,
@@ -79,7 +79,7 @@
     {
         "id": 12,
         "category": "objective",
-        "status": "to-do",
+        "status": "in progress",
         "title": "Make a meal from ingredients grown in my own garden",
         "notes": ""
     },
