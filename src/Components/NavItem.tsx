@@ -1,7 +1,6 @@
 import React, { ReactElement } from "react";
 import { NavLink } from "react-router";
 import { IconButton, Tooltip, useTheme} from "@mui/material";
-import theme from "../Theme";
 
 export type NavItemProps = {
   icon: ReactElement;
@@ -23,7 +22,6 @@ const NavItem: React.FC<NavItemProps> = (
       <Tooltip 
         title={hoverText}
       >
-        {/*TODO: USE CSS VARS*/}
         <IconButton sx={{
           backgroundColor: palette.primary.main,
           color: palette.primary.contrastText,

@@ -1,0 +1,54 @@
+.iconCard {
+    background: var(--color-card-bg);
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: var(--shadow-icon-card);
+    display: flex;
+    align-items: stretch;
+}
+
+.iconContainer {
+    display: flex;
+    align-items: center;
+    padding-right: 16px;
+}
+
+.cardContent {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cardContent > h3 {
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.cardContent > p {
+    font-size: 0.9rem;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.cardTag {
+    align-self: flex-start;
+}
+
+.cardTag[data-status="complete"] {
+    background-color: var(--color-status-complete-bg);
+    color: var(--color-status-complete-text);
+}
+
+.cardTag[data-status="in progress"] {
+    background-color: var(--color-status-in-progress-bg);
+    color: var(--color-status-in-progress-text);
+}
+
+.cardTag[data-status="planned"] {
+    background-color: var(--color-status-planned-bg);
+    color: var(--color-status-planned-text);
+}

@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes } from 'react-router';
 import theme from './Theme';
 import ContentPane from './Components/ContentPane';
 import { CssBaseline } from '@mui/material';
-import './Styles/styles.css';
 import HomePage from './Components/HomePage';
 import ProjectsPage from './Components/ProjectsPage';
 import LifeList from './Components/LifeList';

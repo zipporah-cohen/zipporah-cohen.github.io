@@ -1,12 +1,4 @@
-.content-cards-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
-    justify-items: center;
-}
-
-.static-content-card {
+.staticContentCard {
     flex-grow: 1;
     margin: 10px;
     position: relative;
@@ -14,8 +6,8 @@
     width: -webkit-fill-available;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    background: #f8f7f2;
+    box-shadow: var(--shadow-card);
+    background: var(--color-card-bg);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,25 +15,25 @@
     padding: 24px;
     cursor: pointer;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
-
-    &.hover {
-        transform: scale(1.05);
-    }
 }
 
-.static-content-card:focus {
+.staticContentCard.hover {
+    transform: scale(1.05);
+}
+
+.staticContentCard:focus {
     outline: none;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    box-shadow: var(--shadow-card-focus);
 }
 
-.static-card-icon {
+.staticCardIcon {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 16px;
 }
 
-.static-card-content {
+.staticCardContent {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,24 +42,24 @@
     width: 100%;
 }
 
-.static-card-title {
+.staticCardTitle {
     margin: 0 0 8px 0;
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.static-card-text {
+.staticCardText {
     margin: 0;
     font-size: 1rem;
     line-height: 1.5;
 }
 
-.static-card-modal {
+.staticCardModal {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #f8f7f2;
+    background: var(--color-card-bg);
     padding: 32px;
     border-radius: 12px;
     outline: none;

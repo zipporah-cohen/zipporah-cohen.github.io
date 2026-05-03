@@ -1,4 +1,4 @@
-import '../Styles/icon-cards.css';
+import styles from '../Styles/modules/CompactIconCard.module.css';
 import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import { IconCardContent } from '../types';
@@ -23,12 +23,12 @@ const CompactIconCard: React.FC<IconCardContent> = ({ title, subtext, displayOpt
   };
 
   return (
-    <CardContent className="icon-card">
-      <div className="icon-container">
+    <CardContent className={styles.iconCard}>
+      <div className={styles.iconContainer}>
         {renderCardIcon()}
       </div>
-      <div 
-        className="card-content"
+      <div
+        className={styles.cardContent}
         style={{ color: palette.primary.main }}
       >
         <h3>{title}</h3>
@@ -36,7 +36,7 @@ const CompactIconCard: React.FC<IconCardContent> = ({ title, subtext, displayOpt
           <p style={{ color: palette.primary.light }}>{subtext}</p>
         }
         <Chip
-          className="card-tag"
+          className={styles.cardTag}
           variant="filled"
           label={displayOptions?.tagText ?? "to-do"}
           data-status={displayOptions?.tagText?.toLowerCase() ?? ""}

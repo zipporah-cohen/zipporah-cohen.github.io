@@ -1,25 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import '../Styles/image-cards.css';
+import React from 'react';
 import CompactIconCard from './CompactIconCard';
-import { LifeListItem } from '../types';
+import styles from '../Styles/modules/LifeList.module.css';
+import useLifeListData from '../hooks/useLifeListData';
 
 const LifeList: React.FC = () => {
-  const [listItems, setListItems] = useState<LifeListItem[]>([]);
-  
-  // Fetch using useEffect for demo instead of loading in local file content
-  useEffect(() => {
-    const fetchItems = async () => {
-      try {
-        const response = await fetch('/data/lifeListData.json');
-        const items = await response.json();
-        setListItems(items);
-      } catch (error) {
-        console.error("Error fetching life list items:", error);
-      }
-    };
+  const { data: listItems, loading, error } = useLifeListData();
 
-    fetchItems();
-  }, []);
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Could not load life list: {error}</p>;
 
   return (
     <>
@@ -27,7 +15,7 @@ const LifeList: React.FC = () => {
         <h1>Life List</h1>
         <p>What better way to get to know me than the things I aim to do and experience? Items are tagged with their status and icons indicate their category (experience or objective).</p>
       </div>      
-        <div className="icon-cards-grid">
+        <div className={styles.iconCardsGrid}>
         {listItems.map((item) => (
           <CompactIconCard
             key={item.id}

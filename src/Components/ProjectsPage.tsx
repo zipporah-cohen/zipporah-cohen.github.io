@@ -5,7 +5,7 @@ import bigKnitImage from '../assets/gantry.png';
 import genderedLanguageImage from '../assets/senior-poster.png';
 import chatroomImage from '../assets/chatroom.png';
 import savingFaceImage from '../assets/saving-face.png';
-import '../Styles/image-cards.css';
+import styles from '../Styles/modules/ProjectsPage.module.css';
 
 const ProjectsPage: React.FC = () => {
   return (
@@ -14,7 +14,7 @@ const ProjectsPage: React.FC = () => {
       <h1>Projects</h1>
       <p>Here you can find projects I've worked on both individually and with others. Hover over them to see details or give them a click to head to their respective repositories or papers.</p>
     </div>
-      <div className='image-card-menu'>
+      <div className={styles.imageCardMenu}>
         <ImageOverlayCard 
           imageSrc={thisWebsiteImage} 
           title='This Website!' 

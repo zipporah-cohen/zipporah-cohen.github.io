@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTheme } from '@mui/material';
-import '../Styles/image-cards.css';
+import styles from '../Styles/modules/ImageOverlayCard.module.css';
 
 type ImageOverlayCardProps = {
   imageSrc: string,
@@ -18,13 +18,13 @@ const ImageOverlayCard = ({ imageSrc, title, subtext, projectURL = "" }: ImageOv
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <img src={imageSrc} alt={title} className="card-image" />
+      <img src={imageSrc} alt={title} className={styles.cardImage} />
       <div
-        className={`text-panel ${hovered ? 'expanded' : 'collapsed'}`}
+        className={`${styles.textPanel} ${hovered ? styles.expanded : styles.collapsed}`}
         style={{ background: palette.primary.main, color: palette.primary.contrastText }}
       >
-        <h3 className="title">{title}</h3>
-        <p className={`subtext ${hovered ? 'expanded-text' : 'truncated'}`}>
+        <h3 className={styles.title}>{title}</h3>
+        <p className={`${styles.subtext} ${hovered ? '' : styles.truncated}`}>
           {subtext}
         </p>
       </div>
@@ -32,9 +32,9 @@ const ImageOverlayCard = ({ imageSrc, title, subtext, projectURL = "" }: ImageOv
   );
 
   return (
-  <div className="image-card">
+  <div className={styles.imageCard}>
     {projectURL ? (
-      <a href={projectURL} target="_blank">
+      <a href={projectURL} target="_blank" rel="noopener noreferrer">
         {cardContent}
       </a>
       ) : (

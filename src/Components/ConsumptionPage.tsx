@@ -1,32 +1,21 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import StaticContentCard from './StaticContentCard';
-import { ConsumptionData } from '../types';
 import useConsumptionData from '../hooks/useConsumptionData';
-import '../Styles/static-content-card.css';
+import useFormattedConsumptionData from '../hooks/useFormattedConsumptionData';
+import styles from '../Styles/modules/ConsumptionPage.module.css';
 
 const ConsumptionPage: React.FC = () => {
-    const [consumptionItems, setConsumptionItems] = useState<ConsumptionData>([]);
-
-    useEffect(() => {
-        const fetchItems = async () => {
-            try {
-                const response = await fetch('/data/consumptionData.json');
-                const items: ConsumptionData = await response.json();
-                setConsumptionItems(items);
-            } catch (error) {
-                console.error("Error fetching consumption data:", error);
-            }
-        };
-
-        fetchItems();
-    }, []);
+    const { data: consumptionItems, loading, error } = useConsumptionData();
 
     const { 
         formattedBooksContent,
         formattedWinesContent,
         formattedRecipesContent,
         formattedLanguageContent
-    } = useConsumptionData(consumptionItems);
+    } = useFormattedConsumptionData(consumptionItems);
+
+    if (loading) return <p>Loading...</p>;
+    if (error) return <p>Could not load consumption data: {error}</p>;
 
     return (
         <>
@@ -34,7 +23,7 @@ const ConsumptionPage: React.FC = () => {
                 <h1>Consuming Under Capitalism</h1>
                 <p>Things I've been eating, drinking, and learning of late.</p>
             </div>
-            <div className="content-cards-grid" >
+            <div className={styles.contentCardsGrid}>
                 <StaticContentCard
                     key="wines"
                     icon={formattedWinesContent.icon}

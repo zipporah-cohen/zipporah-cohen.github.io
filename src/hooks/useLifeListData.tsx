@@ -1,25 +1,25 @@
 import { useEffect, useState } from 'react';
-import { ConsumptionData } from '../types';
+import { LifeListItem } from '../types';
 
-type UseConsumptionItemsResult = {
-    data: ConsumptionData;
+type UseLifeListDataResult = {
+    data: LifeListItem[];
     loading: boolean;
     error: string | null;
 };
 
-const useConsumptionData = (): UseConsumptionItemsResult => {
-    const [data, setData] = useState<ConsumptionData>([]);
+const useLifeListData = (): UseLifeListDataResult => {
+    const [data, setData] = useState<LifeListItem[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
         const fetchItems = async () => {
             try {
-                const response = await fetch('/data/consumptionData.json');
+                const response = await fetch('/data/lifeListData.json');
                 if (!response.ok) {
-                    throw new Error(`Failed to load consumption data (${response.status})`);
+                    throw new Error(`Failed to load life list data (${response.status})`);
                 }
-                const items: ConsumptionData = await response.json();
+                const items: LifeListItem[] = await response.json();
                 setData(items);
             } catch (err) {
                 setError(err instanceof Error ? err.message : 'Unknown error');
@@ -34,4 +34,4 @@ const useConsumptionData = (): UseConsumptionItemsResult => {
     return { data, loading, error };
 };
 
-export default useConsumptionData;
+export default useLifeListData;

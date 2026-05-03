@@ -20,7 +20,6 @@ const theme = createTheme({
     text: {
       primary: '#3c405b'
     }
-    // footer #82b29a
   },
 });
 
